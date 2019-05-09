@@ -39,6 +39,11 @@ public interface UserService {
     int create(User user);
 
     /**
+     * 通过username查找
+     */
+    List<User> findByUsername(String userName);
+
+    /**
      * 根据id删除
      */
     void delById(int id);
